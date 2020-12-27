@@ -38,9 +38,9 @@ jobs:
       run: |
         terraform plan
 
-  apply_terraform:
+  apply:
     environment: prod 
-    needs: plan_terraform
+    needs: plan
     defaults:
       run:
         working-directory: ./terraform
