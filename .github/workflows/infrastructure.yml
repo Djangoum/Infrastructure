@@ -10,7 +10,6 @@ jobs:
 
   plan:
     environment: prod 
-    needs: build
     name: Terraform Plan
     runs-on: ubuntu-latest
     env:
