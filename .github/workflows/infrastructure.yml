@@ -9,7 +9,6 @@ on:
 jobs:
 
   plan:
-    environment: prod 
     name: Terraform Plan
     runs-on: ubuntu-latest
     env:
