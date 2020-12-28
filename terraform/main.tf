@@ -8,7 +8,7 @@ terraform {
 
 locals {
     appversion = "001"
-    db_server_name = "lists-db-${terraform.workspace}-${local.appversion}"
+    db_server_name = "listsdb${terraform.workspace}${local.appversion}"
 }
 
 provider "aws" {
