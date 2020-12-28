@@ -19,8 +19,8 @@ provider "aws" {
 resource "aws_db_instance" "lists_database" {
   allocated_storage    = 20
   storage_type         = "gp2"
-  engine               = "aurora"
-  engine_version       = "5.7"
+  engine               = "aurora-mysql"
+  engine_version       = "5.7.12"
   instance_class       = "db.t2.micro"
   name                 = local.db_server_name
   username             = "foo"
