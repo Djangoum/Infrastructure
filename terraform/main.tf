@@ -26,4 +26,5 @@ resource "aws_db_instance" "lists_database" {
   username             = "foo"
   password             = "foobarbaz"
   parameter_group_name = "default.mysql5.7"
+  skip_final_snapshot  = true
 }
