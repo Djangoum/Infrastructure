@@ -25,6 +25,6 @@ resource "aws_db_instance" "lists_database" {
   name                 = local.db_server_name
   username             = "foo"
   password             = "foobarbaz"
-  parameter_group_name = "default.mysql5.7"
+  parameter_group_name = "default.aurora-mysql5.7"
   final_snapshot_identifier  = "foo"
 }
